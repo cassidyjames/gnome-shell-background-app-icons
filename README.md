@@ -1,6 +1,8 @@
 # Background App Icons for GNOME Shell
 
-Show background apps directly in the top bar!
+**Show background apps directly in the top bar!**
+
+![Screenshot](screenshot.png)
 
 GNOME Shell supports background apps through the xdg-desktop-portal. People complain about not having status icons for their apps. This extension just shows those same background apps directly top bar, in case that's your thing.
 
