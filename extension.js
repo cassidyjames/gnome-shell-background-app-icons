@@ -268,6 +268,15 @@ export default class BackgroundAppIconsExtension extends Extension {
                 this._indicators.set(appId, indicator);
             }
         }
+
+        const box = Main.panel._rightBox;
+        let prevContainer = null;
+        for (const appId of currentApps.keys()) {
+            const indicator = this._indicators.get(appId);
+            if (prevContainer !== null)
+                box.set_child_above_sibling(indicator.container, prevContainer);
+            prevContainer = indicator.container;
+        }
     }
 
     _syncVisibility() {
