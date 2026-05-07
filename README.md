@@ -8,6 +8,20 @@ GNOME Shell supports background apps through the xdg-desktop-portal. People comp
 
 Hovering an app icon shows a tooltip with its name. Selecting the icon shows its status and menu items to open a window or quit the app. Everything you can already do from the Background Apps menu, but right on the top bar.
 
+## TODO
+
+See the [open issues](https://github.com/cassidyjames/background-app-icons/issues) for everything, but in general, I'd like to focus on:
+
+1. Exposing more useful actions in the menu, i.e. static desktop actions and eventually dynamic actions if it's not too hard.
+   - #4
+   - #5 
+2. Handling the too-many-icons case, e.g. by making the area collapsible and/or having a concept of hidden/pinned icons.
+   - #1
+3. Exploring other "system tray" like interactions, but using all the modern APIs we already have.
+   - #2
+   - #3
+   - #6
+
 ## Requirements
 
 GNOME Shell 50
