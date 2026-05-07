@@ -1,7 +1,7 @@
 {
   "uuid": "background-app-icons@cassidyjames.com",
   "name": "Background App Icons",
-  "description": "Shows apps running in the background as individual icons in the top bar",
-  "shell-version": ["47", "48", "49", "50"],
+  "description": "Show Background Apps in the top bar with an icon and menu for quick access to actions",
+  "shell-version": ["50"],
   "version": 1
 }

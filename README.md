@@ -1,6 +1,6 @@
-# Background App Icons for GNOME Shell
+# Background App Icons
 
-**Show background apps directly in the top bar!**
+**Show Background Apps in the top bar with an icon and menu for quick access to actions**
 
 ![Screenshot](screenshot.png)
 
@@ -10,7 +10,7 @@ Hovering an app icon shows a tooltip with its name. Selecting the icon shows its
 
 ## Requirements
 
-The extension depends on the `org.freedesktop.background.Monitor` D-Bus interface, provided by `xdg-desktop-portal-gnome`. It targets GNOME Shell 47–50.
+GNOME Shell 50
 
 ## Installation
 
