@@ -48,11 +48,18 @@ class BackgroundAppIndicator extends PanelMenu.Button {
         this._app = app;
         this._showLabelTimeoutId = 0;
 
-        this.add_child(new St.Icon({
+        const icon = new St.Icon({
             gicon: getSymbolicIcon(app),
             style_class: 'system-status-icon',
-            style: 'padding: 0; margin: 0;',
-        }));
+            style: '-st-icon-style: symbolic; padding: 0; margin: 0;',
+        });
+        const desaturateEffect = new Clutter.DesaturateEffect();
+        icon.add_effect(desaturateEffect);
+        icon.connect('style-changed', () => {
+            const themeNode = icon.get_theme_node();
+            desaturateEffect.enabled = themeNode.get_icon_style() === St.IconStyle.SYMBOLIC;
+        });
+        this.add_child(icon);
 
         this._label = new St.Label({
             style_class: 'dash-label',
