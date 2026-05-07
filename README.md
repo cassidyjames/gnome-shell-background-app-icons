@@ -12,8 +12,8 @@ The extension depends on the `org.freedesktop.background.Monitor` D-Bus interfac
 
 ## Installation
 
-Copy or symlink the extension directory to `~/.local/share/gnome-shell/extensions/background-app-icons@cassidyjames.github.io`, then enable it:
+Copy or symlink the extension directory to `~/.local/share/gnome-shell/extensions/background-app-icons@cassidyjames.com`, then enable it:
 
 ```sh
-gnome-extensions enable background-app-icons@cassidyjames.github.io
+gnome-extensions enable background-app-icons@cassidyjames.com
 ```
